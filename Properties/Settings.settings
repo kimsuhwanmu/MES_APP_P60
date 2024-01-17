@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MES_APP_P80.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MES_APP_Q10_wsPP4G653FL_PP4G653FL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://125.135.140.21/CKOET00053_Default/Services/PP/PP4G653FL.asmx</Value>
+    </Setting>
+    <Setting Name="MES_APP_Q10_wsPP4G409FL_PP4G409FL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://125.135.140.21/CKOET00053_Default/Services/PP/PP4G409FL.asmx</Value>
+    </Setting>
+    <Setting Name="MES_APP_Q10_wsPP4G702FL_PP4G702FL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://125.135.140.21/CKOET00053_Default/Services/PP/PP4G702FL.asmx</Value>
+    </Setting>
+    <Setting Name="MES_APP_Q10_wsPP4G452FL_PP4G452FL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://125.135.140.21/CKOET00053_Default/Services/PP/PP4G452FL.asmx</Value>
+    </Setting>
+    <Setting Name="MES_APP_Q10_wsPQIG280FL_PQIG280FL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://125.135.140.14/CKOET00053_Default/Services/QM/PQIG280FL.asmx</Value>
+    </Setting>
+    <Setting Name="MES_APP_Q10_wsPQIG310FL_PQIG310FL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://125.135.140.14/CKOET00053_Default/Services/QM/PQIG310FL.asmx</Value>
+    </Setting>
+    <Setting Name="MES_APP_P80_wsPP4G303FL_PP4G303FL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://125.135.140.14/CKOET00053_Default/Services/PP/PP4G303FL.asmx</Value>
+    </Setting>
+    <Setting Name="MES_APP_P80_wsPP4G702FL_PP4G702FL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://125.135.140.14/CKOET00053_Default/Services/PP/PP4G702FL.asmx</Value>
+    </Setting>
+    <Setting Name="MES_APP_P80_wsPP4G653FL_PP4G653FL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://125.135.140.14/CKOET00053_Default/Services/PP/PP4G653FL.asmx</Value>
+    </Setting>
+    <Setting Name="MES_APP_P80_wsPP4G409FL_PP4G409FL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://125.135.140.14/CKOET00053_Default/Services/PP/PP4G409FL.asmx</Value>
+    </Setting>
+    <Setting Name="MES_APP_P80_wsPP4G452FL_PP4G452FL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://125.135.140.21/CKOET00053_Default/Services/PP/PP4G452FL.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

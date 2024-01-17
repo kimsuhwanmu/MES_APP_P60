@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://bizentro.com/DsQMaintInspReleaseSimpleSvr.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://bizentro.com/DsQMaintInspReleaseSimpleSvr.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://bizentro.com/DsQMaintInspReleaseSimpleSvr.xsd" id="DsQMaintInspReleaseSimpleSvr" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DsQMaintInspReleaseSimpleSvr">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IQ_INSPECTION_RESULT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="plant_cd" type="xs:string" />
+              <xs:element minOccurs="0" name="insp_req_no" type="xs:string" />
+              <xs:element minOccurs="0" name="insp_result_no" type="xs:int" />
+              <xs:element msdata:DateTimeMode="Unspecified" minOccurs="0" name="release_dt" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="sl_cd_for_good" type="xs:string" />
+              <xs:element minOccurs="0" name="sl_cd_for_defect" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

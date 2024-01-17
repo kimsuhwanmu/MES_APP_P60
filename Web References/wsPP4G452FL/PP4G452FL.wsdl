@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.Bizentro.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.Bizentro.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.Bizentro.com/">
+      <s:import namespace="http://bizentro.com/DsPConfirmRsltArr.xsd" />
+      <s:import schemaLocation="http://125.135.140.21/CKOET00053_Default/Services/PP/PP4G452FL.asmx?schema=DsPConfirmRsltArr" namespace="http://bizentro.com/DsPConfirmRsltArr.xsd" />
+      <s:element name="cPCnfmRsltArr_P_CONFIRM_RSLT_ARR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvStrGlobalCollection" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="I1_b_plant_plant_cd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="I2_type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://bizentro.com/DsPConfirmRsltArr.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="cPCnfmRsltArr_P_CONFIRM_RSLT_ARRResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="cPCnfmRsltArr_P_CONFIRM_RSLT_ARRSoapIn">
+    <wsdl:part name="parameters" element="tns:cPCnfmRsltArr_P_CONFIRM_RSLT_ARR" />
+  </wsdl:message>
+  <wsdl:message name="cPCnfmRsltArr_P_CONFIRM_RSLT_ARRSoapOut">
+    <wsdl:part name="parameters" element="tns:cPCnfmRsltArr_P_CONFIRM_RSLT_ARRResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PP4G452FLSoap">
+    <wsdl:operation name="cPCnfmRsltArr_P_CONFIRM_RSLT_ARR">
+      <wsdl:input message="tns:cPCnfmRsltArr_P_CONFIRM_RSLT_ARRSoapIn" />
+      <wsdl:output message="tns:cPCnfmRsltArr_P_CONFIRM_RSLT_ARRSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PP4G452FLHttpGet" />
+  <wsdl:portType name="PP4G452FLHttpPost" />
+  <wsdl:binding name="PP4G452FLSoap" type="tns:PP4G452FLSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="cPCnfmRsltArr_P_CONFIRM_RSLT_ARR">
+      <soap:operation soapAction="http://www.Bizentro.com/cPCnfmRsltArr_P_CONFIRM_RSLT_ARR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PP4G452FLSoap12" type="tns:PP4G452FLSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="cPCnfmRsltArr_P_CONFIRM_RSLT_ARR">
+      <soap12:operation soapAction="http://www.Bizentro.com/cPCnfmRsltArr_P_CONFIRM_RSLT_ARR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PP4G452FLHttpGet" type="tns:PP4G452FLHttpGet">
+    <http:binding verb="GET" />
+  </wsdl:binding>
+  <wsdl:binding name="PP4G452FLHttpPost" type="tns:PP4G452FLHttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="PP4G452FL">
+    <wsdl:port name="PP4G452FLSoap" binding="tns:PP4G452FLSoap">
+      <soap:address location="http://125.135.140.21/CKOET00053_Default/Services/PP/PP4G452FL.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PP4G452FLSoap12" binding="tns:PP4G452FLSoap12">
+      <soap12:address location="http://125.135.140.21/CKOET00053_Default/Services/PP/PP4G452FL.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PP4G452FLHttpGet" binding="tns:PP4G452FLHttpGet">
+      <http:address location="http://125.135.140.21/CKOET00053_Default/Services/PP/PP4G452FL.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PP4G452FLHttpPost" binding="tns:PP4G452FLHttpPost">
+      <http:address location="http://125.135.140.21/CKOET00053_Default/Services/PP/PP4G452FL.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

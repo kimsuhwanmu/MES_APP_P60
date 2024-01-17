@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://bizentro.com/DsPConfirmRsltArr.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://bizentro.com/DsPConfirmRsltArr.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://bizentro.com/DsPConfirmRsltArr.xsd" id="DsPConfirmRsltArr" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DsPConfirmRsltArr">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IG_P_PRODUCTION_RESULTS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" default="" name="prodt_order_no" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="opr_no" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="report_type" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="prod_qty_in_order_unit" type="xs:decimal" />
+              <xs:element msdata:DateTimeMode="Unspecified" minOccurs="0" name="report_dt" type="xs:dateTime" />
+              <xs:element minOccurs="0" default="" name="shift_cd" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="reason_cd" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="lot_no" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="lot_sub_no" type="xs:int" />
+              <xs:element minOccurs="0" default="" name="rcpt_item_document_no" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="remark" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="prod_qty_in_base_unit" type="xs:decimal" />
+              <xs:element minOccurs="0" default="0" name="subcontract_prc" type="xs:decimal" />
+              <xs:element minOccurs="0" default="0" name="subcontract_amt" type="xs:decimal" />
+              <xs:element minOccurs="0" default="" name="cur_cd" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="count" type="xs:int" />
+              <xs:element minOccurs="0" default="" name="ext1_cd" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="ext1_qty" type="xs:decimal" />
+              <xs:element minOccurs="0" default="0" name="ext1_amt" type="xs:decimal" />
+              <xs:element minOccurs="0" default="0" name="ext1_rt" type="xs:decimal" />
+              <xs:element minOccurs="0" default="" name="ext2_cd" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="ext2_qty" type="xs:decimal" />
+              <xs:element minOccurs="0" default="0" name="ext2_amt" type="xs:decimal" />
+              <xs:element minOccurs="0" default="0" name="ext2_rt" type="xs:decimal" />
+              <xs:element minOccurs="0" default="" name="ext3_cd" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="ext3_qty" type="xs:decimal" />
+              <xs:element minOccurs="0" default="0" name="ext3_amt" type="xs:decimal" />
+              <xs:element minOccurs="0" default="0" name="ext3_rt" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

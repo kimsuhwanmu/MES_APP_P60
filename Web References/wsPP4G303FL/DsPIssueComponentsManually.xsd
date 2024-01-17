@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://bizentro.com/DsPIssueComponentsManually.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://bizentro.com/DsPIssueComponentsManually.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://bizentro.com/DsPIssueComponentsManually.xsd" id="DsPIssueComponentsManually" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DsPIssueComponentsManually">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="I_I_GOODS_MVMT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" default="" name="plant_cd" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="prodt_order_no" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="opr_no" type="xs:string" />
+              <xs:element msdata:DateTimeMode="Unspecified" minOccurs="0" name="report_dt" type="xs:dateTime" />
+              <xs:element minOccurs="0" default="" name="item_cd" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="sl_cd" type="xs:string" />
+              <xs:element minOccurs="0" name="tracking_no" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="lot_no" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="lot_sub_no" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="entry_qty" type="xs:decimal" />
+              <xs:element minOccurs="0" default="" name="entry_unit" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="wc_cd" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="seq" type="xs:int" />
+              <xs:element minOccurs="0" default="" name="req_no" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="item_document_no" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="trns_type" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="mov_type" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="row_count" type="xs:int" />
+              <xs:element minOccurs="0" default="" name="mv_req_no" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="mv_req_seq" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

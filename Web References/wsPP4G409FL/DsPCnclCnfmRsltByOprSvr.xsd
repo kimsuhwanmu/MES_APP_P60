@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://bizentro.com/DsPCnclCnfmRsltByOprSvr.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://bizentro.com/DsPCnclCnfmRsltByOprSvr.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://bizentro.com/DsPCnclCnfmRsltByOprSvr.xsd" id="DsPCnclCnfmRsltByOprSvr" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DsPCnclCnfmRsltByOprSvr">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IG_P_PRODUCTION_RESULTS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" default="" name="prodt_order_no" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="opr_no" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="seq" type="xs:int" />
+              <xs:element msdata:DateTimeMode="Unspecified" minOccurs="0" name="report_dt" type="xs:dateTime" />
+              <xs:element minOccurs="0" default="" name="report_type" type="xs:string" />
+              <xs:element minOccurs="0" default="0" name="prod_qty_in_order_unit" type="xs:decimal" />
+              <xs:element minOccurs="0" default="0" name="prod_qty_in_base_unit" type="xs:decimal" />
+              <xs:element minOccurs="0" default="" name="rcpt_item_document_no" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="reason_cd" type="xs:string" />
+              <xs:element minOccurs="0" default="" name="flag" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

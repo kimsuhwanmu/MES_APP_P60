@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.Bizentro.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.Bizentro.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.Bizentro.com/">
+      <s:import namespace="http://bizentro.com/DsPIssueComponentsManually.xsd" />
+      <s:import schemaLocation="http://125.135.140.14/CKOET00053_Default/Services/PP/PP4G303FL.asmx?schema=DsPIssueComponentsManually" namespace="http://bizentro.com/DsPIssueComponentsManually.xsd" />
+      <s:element name="cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLY">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pvStrGlobalCollection" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="dataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://bizentro.com/DsPIssueComponentsManually.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLYResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLYSoapIn">
+    <wsdl:part name="parameters" element="tns:cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLY" />
+  </wsdl:message>
+  <wsdl:message name="cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLYSoapOut">
+    <wsdl:part name="parameters" element="tns:cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLYResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PP4G303FLSoap">
+    <wsdl:operation name="cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLY">
+      <wsdl:input message="tns:cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLYSoapIn" />
+      <wsdl:output message="tns:cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLYSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PP4G303FLHttpGet" />
+  <wsdl:portType name="PP4G303FLHttpPost" />
+  <wsdl:binding name="PP4G303FLSoap" type="tns:PP4G303FLSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLY">
+      <soap:operation soapAction="http://www.Bizentro.com/cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLY" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PP4G303FLSoap12" type="tns:PP4G303FLSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLY">
+      <soap12:operation soapAction="http://www.Bizentro.com/cPIssCmpsManually_P_ISSUE_COMPONENTS_MANUALLY" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PP4G303FLHttpGet" type="tns:PP4G303FLHttpGet">
+    <http:binding verb="GET" />
+  </wsdl:binding>
+  <wsdl:binding name="PP4G303FLHttpPost" type="tns:PP4G303FLHttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="PP4G303FL">
+    <wsdl:port name="PP4G303FLSoap" binding="tns:PP4G303FLSoap">
+      <soap:address location="http://125.135.140.14/CKOET00053_Default/Services/PP/PP4G303FL.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PP4G303FLSoap12" binding="tns:PP4G303FLSoap12">
+      <soap12:address location="http://125.135.140.14/CKOET00053_Default/Services/PP/PP4G303FL.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PP4G303FLHttpGet" binding="tns:PP4G303FLHttpGet">
+      <http:address location="http://125.135.140.14/CKOET00053_Default/Services/PP/PP4G303FL.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PP4G303FLHttpPost" binding="tns:PP4G303FLHttpPost">
+      <http:address location="http://125.135.140.14/CKOET00053_Default/Services/PP/PP4G303FL.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

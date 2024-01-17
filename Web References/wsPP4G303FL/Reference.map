@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://125.135.140.14/CKOET00053_Default/Services/PP/PP4G303FL.asmx?disco" filename="PP4G303FL.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://125.135.140.14/CKOET00053_Default/Services/PP/PP4G303FL.asmx?schema=DsPIssueComponentsManually" filename="DsPIssueComponentsManually.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://125.135.140.14/CKOET00053_Default/Services/PP/PP4G303FL.asmx?wsdl" filename="PP4G303FL.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>
